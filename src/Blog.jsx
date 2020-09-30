@@ -5,6 +5,9 @@ import Article from './Article';
 class Blog extends React.Component {
     constructor(props) {
         super(props)
+        this.state = {
+            isPublished: false
+        }
     }
 
     render() {
@@ -12,12 +15,7 @@ class Blog extends React.Component {
         return(
             <>
                 <Article    title = {"React,Redux"}
-                            
-                />
-                <Article    title = {"Laravel,Bootstrap"}
-                            
-                />
-                <Article    title = {"Vue.js,javascript"}
+                            isPublished = {this.state.isPublished}
                             
                 />
             </>
